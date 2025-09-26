@@ -88,7 +88,7 @@
             align-items: center;
             justify-content: center;
             font-weight: 700;
-            font-size: clamp(1.5em, 10vw, 2.5em); 
+            font-size: clamp(1.2em, 5vw, 2.0em); 
             color: var(--white);
             position: relative;
             border: 1px solid var(--border-color);
@@ -199,6 +199,13 @@
             background-color: var(--primary-color);
             transform: translateY(-2px); /* Slight lift on hover */
         }
+
+        /* For desktop screens */
+        @media (min-width: 769px) {
+            .calendar-grid {
+            grid-template-columns: repeat(8, 1fr);
+        }
+}
     </style>
 </head>
 <body>
@@ -294,6 +301,7 @@
 </body>
 
 </html>
+
 
 
 
